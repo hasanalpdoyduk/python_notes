@@ -9,8 +9,8 @@ print("10", "05", "2002", sep = "/")
 
 print("Hasan", "Alp", "Doyduk", sep = "\n")
 >>> Hasan
-		Alp
-		Doyduk
+    Alp
+    Doyduk
 
 #çıktıda yıldız kullanımı (*)
 #her öge arasını ifade eder
@@ -63,7 +63,7 @@ print(list5)
 
 #fonksiyonlarda varsayılan değer atama
 def selam(isim = "İsimsiz"):
-		print("Selam", isim)
+    print("Selam", isim)
 selam()
 selam(Alp)
 >>> Selam İsimsiz
@@ -97,9 +97,9 @@ print(f"My name is {name} {surname}")
 #local değerle global değeri değiştirmek
 a = 2
 def fonk():
-		global a
-		a = 3
-		print(a)
+    global a
+    a = 3
+    print(a)
 fonk()
 print(a)
 >>> 3
@@ -107,13 +107,13 @@ print(a)
 
 #nonlocal iç içe fonksiyonlarda önceki fonksiyonun değişkenini referans alır
 def outer():
-		first_num = 1
-		def inner():
-				nonlocal first_num
-				second_num = 1
-				print("inner-second_num is:", second_num)
-		inner()
-		print("outer-first_num is:", first_num)
+    first_num = 1
+    def inner():
+	nonlocal first_num
+	second_num = 1
+	print("inner-second_num is:", second_num)
+    inner()
+    print("outer-first_num is:", first_num)
 outer()
 >>> inner-second_num is: 1
 >>> outer-first_num is: 0
