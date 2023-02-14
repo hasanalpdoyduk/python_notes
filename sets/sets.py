@@ -13,10 +13,10 @@ x = {"Python","Php","Java","C","Javascript"}
 for i in x:
     print(i) 
 >>> Php
-		Python
-		Java
-		Javascript
-		C
+    Python
+    Java
+    Javascript
+    C
 #set'lerin bir elemanına direkt index ile ulaşamayız
 #set'leri listeye çevirip index işlemlerini uygulayabiliriz
 
