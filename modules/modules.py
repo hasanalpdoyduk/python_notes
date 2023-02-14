@@ -1,14 +1,14 @@
-#see the functions of the module
+#modülün fonksiyonlarını görme
 dir(module)
 
-#obtain information about functions in module
+#modüldeki fonksiyonlar hakkında bilgi edinme
 help(module)
 
-#using the imported module with a different name
+#içeri aktarılan modülü farklı bir isimle kullanma
 import math as matematik
 
-#using all module functions without typing the module name
+#modül ismini yazmadan bütün modül fonksiyonlarını kullanma
 from math import *
 
-#using selected module functions without typing the module name
-from math import floor, ceil
+#modül ismini yazmadan seçilen modül fonksiyonlarını kullanma
+from math import floor,ceil
