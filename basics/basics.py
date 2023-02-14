@@ -1,8 +1,9 @@
-\n #line skip
-\t #4 (tab) spaces
+\n #satır atlama
+\t #tab (4) boşluk
 
-#sep parameter
-#something to put between elements (changes auto-assigned single space)
+#sep parametresi 
+#elemanlar arası boşluğu değiştirme
+#python'da otomatik atanan tek boşluğu değiştime
 print("10", "05", "2002", sep = "/")
 >>> 10/05/2002
 
@@ -11,30 +12,30 @@ print("Hasan", "Alp", "Doyduk", sep = "\n")
 		Alp
 		Doyduk
 
-# * (use of asterisks in the output)
-#denotes between each item
-#a space will be left between each item if no parameter is used
+#çıktıda yıldız kullanımı (*)
+#her öge arasını ifade eder
+#herhangi bir parametre kullanılmadığı takdirde her öge arasına boşluk bırakılır
 print(*"Python")
 >>> P y t h o n
 
 print(*"TBMM", sep = ".")
 >>> T.B.M.M
 
-#if the number written in #bool() is not 0 writes True, if 0 writes False
+#bool() içerisine yazılan sayı 0 değilse True, 0 ise False sonucu oluşur
 print(bool(2))
 >>> True
 print(bool(0))
 >>> False
 
-a = None #create an unassigned variable
+a = None #değeri atanmamış değişken yaratma
 
-#find the remaining operator
+#kalanı bulma operatörü
 print(12 % 2)
 >>> 0
 print(11 % 3)
 >>> 2
 
-#range() usage with print()
+#range() print() ile kullanımı
 print(*range(0, 10)
 >>> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 print(*range(10)
@@ -58,9 +59,9 @@ list5 = [x for i in list4 for x in i]
 print(list5)
 >>> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-#functions that do not use return parameters are called void functions
-      
-#assign default value in functions
+#return parametresi kullanılmayan fonksiyonlara void fonksiyon denir
+
+#fonksiyonlarda varsayılan değer atama
 def selam(isim = "İsimsiz"):
 		print("Selam", isim)
 selam()
@@ -68,7 +69,7 @@ selam(Alp)
 >>> Selam İsimsiz
 >>> Selam Alp
 
-#string formatting
+#string formatlama
 name = "Hasan"
 surname = "Doyduk"
 print("My name is {} {}".format(name, surname))
@@ -93,7 +94,7 @@ surname = "Doyduk"
 print(f"My name is {name} {surname}")
 >>> My name is Hasan Doyduk
 
-#replacing global value with local value
+#local değerle global değeri değiştirmek
 a = 2
 def fonk():
 		global a
@@ -104,7 +105,7 @@ print(a)
 >>> 3
 >>> 3
 
-#nonlocal references the variable of the previous function in nested functions
+#nonlocal iç içe fonksiyonlarda önceki fonksiyonun değişkenini referans alır
 def outer():
 		first_num = 1
 		def inner():
@@ -117,4 +118,4 @@ outer()
 >>> inner-second_num is: 1
 >>> outer-first_num is: 0
 
-#the word pass is used to indicate that it will identify the block later
+#pass kelimesi bloğu daha sonra tanımlayacağını belirtmek için kullanılır
